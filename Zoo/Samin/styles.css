@@ -105,3 +105,43 @@ body {
 .animal:hover .info {
     display: block;
 }
+
+
+/* */
+
+.animal-background{
+    text-align: center;
+    background-color: #5996bc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width:80vh;
+    height:auto;
+}
+
+.animal-container{
+    text-align: center;
+    background-color: #a8dadc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.animal-container img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 30px;
+}
+.animal-container h1{
+    color:#FFF2F2
+}
+.animal-text{
+    color:#FFF2F2;
+    font-weight: 300;
+    background-color: #de9ec8;
+    border-radius: 10px;
+
+}
+
+img{
+    transform: scale(0.8,0.8);
+}
