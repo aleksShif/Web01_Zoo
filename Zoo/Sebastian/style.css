@@ -96,7 +96,7 @@ body {
     /* bottom: 10px;
     left: 50%;
     transform: translateX(-50%); */
-    background-color: #A9B5DF;
+    background-color: #2D336B;
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -104,4 +104,41 @@ body {
 
 .animal:hover .info {
     display: block;
+}
+
+/* Individual Animal CSS starts here*/
+
+
+
+.animal-background{
+    text-align: center;
+    background-color: #2D336B;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width:80vh;
+    height:70vh;
+}
+
+.animal-container{
+    text-align: center;
+    background-color: #7886C7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.animal-container img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 30px;
+}
+.animal-container h1{
+    color:#FFF2F2
+}
+.animal-text{
+    color:#FFF2F2;
+    font-weight: 300;
+    background-color: #4f5696;
+    border-radius: 10px;
+
 }
