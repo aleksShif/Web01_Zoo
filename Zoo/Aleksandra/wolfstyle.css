@@ -1,0 +1,87 @@
+/* Wolf Page Additional CSS */
+
+.wolf-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for vertical layout */
+    height: 600px;
+    width: 400px;
+    gap: 20px;
+    padding: 20px;
+    background-color: #5996bc; /* Matching color for the container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expand-radio {
+    display: none; /* Hide radio buttons */
+}
+
+.wolf-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #a8dadc; /* Pastel blue background */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.3s ease; /* Add transition for smooth expansion */
+    max-height: 100px; /* Initial contracted height */
+    overflow: hidden; /* Hide overflow content */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.wolf-cell:hover {
+    transform: scale(1.05); 
+    background-color: #87ceeb; /* Light blue background on hover */
+}
+
+.wolf-img {
+    width: 250px;
+    height: 200px;
+    transition: transform 0.3s, filter 0.3s;
+    border-radius: 10px;
+    display: none; /* Initially hide image */
+}
+
+.wolf-info {
+    display: none; /* Initially hide info */
+    margin-top: 10px;
+    background-color: #de9ec8;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#cell1:checked ~ #cell1-content,
+#cell2:checked ~ #cell2-content,
+#cell3:checked ~ #cell3-content {
+    max-height: 500px; /* Expanded height */
+}
+
+#cell1:checked ~ #cell1-content .wolf-img,
+#cell1:checked ~ #cell1-content .wolf-info,
+#cell2:checked ~ #cell2-content .wolf-img,
+#cell2:checked ~ #cell2-content .wolf-info,
+#cell3:checked ~ #cell3-content .wolf-img,
+#cell3:checked ~ #cell3-content .wolf-info {
+    display: block; /* Show image and info when expanded */
+}
+
+#cell1-content label,
+#cell2-content label,
+#cell3-content label {
+    cursor: pointer; 
+    font-weight: bold; 
+    font-size: 24px;
+    margin-bottom: 10px; 
+    transition: font-size 0.3s ease;
+    /* z-index: 1; */
+}
+
+#cell1:checked ~ #cell1-content label,
+#cell2:checked ~ #cell2-content label,
+#cell3:checked ~ #cell3-content label {
+    font-size: 16px; /* Decrease font size when expanded */
+}

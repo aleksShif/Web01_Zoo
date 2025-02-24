@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,15 +36,14 @@ body {
 }
 
 .button-container {
-    /* display: flex; */
-    gap: 0;
+    display: flex;
+    gap: 10px;
 }
 
 .home-button {
     background-color: #f0e4d7;
     color: #457b9d;
     padding: 10px 20px;
-    margin-left: 0;
     text-decoration: none;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -116,50 +115,14 @@ body {
     display: block;
 }
 
-/* Wolf Page Additional CSS */
-
-.wolf-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px; 
-    background-color: #5996bc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-.wolf-cell {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #a8dadc;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.wolf-cell img {
-    width: 250px;
-    height: 200px;
-    transition: transform 0.3s, filter 0.3s;
-    border-radius: 10px;
-}
-
-.wolf-cell img:hover {
-    transform: scale(1.1);
-    filter: brightness(1.2);
-}
-
-.wolf-cell .info {
-    display: none;
-    margin-top: 10px;
-    background-color: #de9ec8;
+.footer-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #a8dadc; /* Matching color for the container */
     color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.wolf-cell:hover .info {
-    display: block;
+    text-align: center; 
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    bottom: 0;
 }
