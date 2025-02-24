@@ -116,8 +116,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width:80vh;
-    height:70vh;
+    width:50%;
+    height:max-content;
 }
 
 .animal-container{
@@ -125,6 +125,8 @@ body {
     background-color: #7886C7;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width:fit-content;
+    height: fit-content;
 }
 
 .animal-container img{
