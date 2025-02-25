@@ -4,4 +4,4 @@
 ## Sebastian Ramos - TheAlienSeb
 
 ### Github Pages: 
-[Zoo Github Pages]https://aleksshif.github.io/Web01_Zoo/
+[Zoo Github Pages](https://aleksshif.github.io/Web01_Zoo/)
